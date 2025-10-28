@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Productos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section class="form-section" id="registro">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">Registra el Ciclo de Vida de tus Productos</h2>
+                <p class="text-muted">Desde la adquisición hasta la disposición final</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form id="productoForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Nombre del Producto *</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Categoría</label>
+                                        <select class="form-select">
+                                            <option>Electrodomésticos</option>
+                                            <option>Ropa y Textiles</option>
+                                            <option>Electrónicos</option>
+                                            <option>Plásticos</option>
+                                            <option>Vidrio</option>
+                                            <option>Metal</option>
+                                            <option>Otros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4 mb-3 text-success">Etapa de Adquisición</h5>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Fecha de Compra</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">¿Nuevo o Usado?</label>
+                                        <select class="form-select">
+                                            <option>Producto Nuevo</option>
+                                            <option>Producto Usado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4 mb-3 text-success">Etapa de Uso</h5>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Duración del Uso (meses)</label>
+                                        <input type="number" class="form-control" min="0">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">¿Fue Reparado?</label>
+                                        <select class="form-select">
+                                            <option>No</option>
+                                            <option>Sí, una vez</option>
+                                            <option>Sí, varias veces</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4 mb-3 text-success">Etapa de Disposición</h5>
+                                <div class="mb-3">
+                                    <label class="form-label">¿Cómo fue dispuesto?</label>
+                                    <select class="form-select">
+                                        <option>Reciclado</option>
+                                        <option>Donado</option>
+                                        <option>Vendido</option>
+                                        <option>Reutilizado</option>
+                                        <option>Descartado en basura</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Centro de Acopio (opcional)</label>
+                                    <input type="text" class="form-control" placeholder="Nombre del centro de reciclaje">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-success btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Registrar Producto
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
